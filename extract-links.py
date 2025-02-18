@@ -13,7 +13,7 @@ def extract_links(xml):
             break
 
     for dataset in datasets_root:
-        for suffix in ('dap', 'info', 'rdf', 'html'):
+        for suffix in ('dap', 'info', 'rdf', 'html', 'dap.nc4', 'dap.csv'):
             print(f"{URL_PREFIX}{dataset.attrib['ID']}.{suffix}")
 
 
